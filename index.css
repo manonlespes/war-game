@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/table.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Exo 2", sans-serif;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: 800;
+}
+
+h1{
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+button {
+    background-color: #FFF100;
+    cursor: pointer;
+    border: none;
+}
+
+p{
+    margin: 0;
+}
+
+button#new-deck {
+    align-self: flex-start;
+    padding: 5px;
+    position: absolute;
+}
+
+button.draw {
+    font-size: 1.2em;
+    padding: 5px;
+    align-self: stretch;
+}
+
+button:disabled{
+    cursor: not-allowed;
+}
+
+div.card-slot {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 120px;
+    width: calc(120px * 5 / 7);
+}
+
+div.card-slot:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
+img.card {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.remaining-card{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 20px;
+}
+
+.remaining-card p{
+    font-size: 12px;
+    color: yellow;
+}
+
+#computer-score, 
+#my-score{
+    margin: 0;
+}
